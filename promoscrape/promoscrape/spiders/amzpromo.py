@@ -65,7 +65,7 @@ Competitor_Dict={}
 for n in range(len(ASIN_List)):
     Competitor_Dict[ASIN_List[n]]=Competitor_List[n]
 
-client = ScraperAPIClient('ad1acefbfe6b9c81573a3b8855fa8c03')
+client = ScraperAPIClient('7e956f6602ae81bbf32384f231ccd327')
 class AmzpromoSpider(scrapy.Spider):
     name = 'amzpromo'
 
@@ -101,7 +101,7 @@ class AmzpromoSpider(scrapy.Spider):
 
         ASIN=response.request.url
 
-        ASIN=ASIN.replace('https://api.scraperapi.com/?url=https%3A%2F%2Fwww.amazon.com%2Fdp%2F','').replace('&api_key=ad1acefbfe6b9c81573a3b8855fa8c03&country_code=us&scraper_sdk=python','')
+        ASIN=ASIN.replace('https://api.scraperapi.com/?url=https%3A%2F%2Fwww.amazon.com%2Fdp%2F','').replace('&api_key=7e956f6602ae81bbf32384f231ccd327&country_code=us&scraper_sdk=python','')
         ASIN=ASIN.replace('%2Fref%3Dpd_alm_fs_merch_1_4_fs_dsk_dl_mw_img%3Ffpw%3Dalm','')
         DOTD_Dollar=0
         Displayed_Discount_Dollar=0
